@@ -1,0 +1,180 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #2c3e50;
+  color: #555555; }
+
+a {
+  color: inherit; }
+
+.box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #69034c;
+  border-radius: 8px;
+  background-color: #b9f6ca;
+  box-shadow: 0 19px 38px rgba(24, 1, 1, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  font-family: "Lato", sans-serif;
+  color: #020701;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 14px;
+  margin: 40px auto;
+  display: block;
+  border-radius: 10px;
+  outline: none;
+  border: 6px solid #556677; }
+
+.interior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+
+.container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.btn {
+  width: 300px;
+  height: 100px;
+  background-color: #f5f5ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 5px;
+  text-decoration: none; }
+
+.ctn {
+  color: #000; }
+  .ctn:hover {
+    background-color: rgba(215, 196, 221, 0.474);
+    color: #fff; }
+
+.modal-window {
+  position: fixed;
+  background-color: #cc6a47;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .modal-window.active {
+    opacity: 1;
+    pointer-events: auto; }
+  .modal-window div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333; }
+  .modal-window .icon {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    background: inherit;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .modal-window .icon #edit #delete {
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      margin: 10px; }
+  .modal-window i {
+    font-size: 2em;
+    color: white;
+    cursor: pointer; }
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  header .width {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer; }
+    header .width:focus {
+      outline: none; }
+  header .btn-1 {
+    background-color: #880e4f; }
+  header .btn-2 {
+    background-color: #8d6e63; }
+  header .btn-3 {
+    background-color: #9e9e9e; }
+  header .btn-4 {
+    background-color: #ffebee; }
+  header .btn-5 {
+    background-color: #827717; }
+  header .btn-6 {
+    background-color: #00897b; }
+  header .widths {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer; }
+    header .widths:focus {
+      outline: none; }
+  header .btn-6 {
+    background-color: #00897b; }
+  header .btn-7 {
+    background-color: #2c3e50; }
+
+.flex {
+  align-self: flex-end; }
+  .flex nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .flex nav ul {
+      color: #000;
+      font-family: "Lato", sans-serif;
+      list-style: none; }
+      .flex nav ul li {
+        display: inline;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 14px; }
+
+/*# sourceMappingURL=main.css.map */

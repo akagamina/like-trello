@@ -1,0 +1,239 @@
+$bodyColor: #2c3e50;
+$clockColor: #b9f6ca;
+$borderColor: #69034c;
+$fontFa: "Lato",
+sans-serif;
+$comCard: #f5f5ba;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: $bodyColor;
+  color: #555555;
+}
+
+a {
+  color: inherit;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  background-color: $clockColor;
+  box-shadow: 0 19px 38px rgba(24, 1, 1, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  font-family: $fontFa;
+  color: rgb(2, 7, 1);
+  @include flex;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 14px;
+  margin: 40px auto;
+  display: block;
+  border-radius: 10px;
+  outline: none;
+  border: 6px solid #556677;
+}
+
+.interior {
+  @include flex;
+  height: 100px;
+}
+
+.container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 300px;
+  height: 100px;
+  background-color: $comCard;
+  @include flex;
+  font-family: $fontFa;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.ctn {
+  color: #000;
+
+  &:hover {
+    background-color: rgba(215, 196, 221, 0.474);
+    color: #fff;
+  }
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgb(204, 106, 71);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include flex;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+  }
+
+  .icon {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    background: inherit;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #edit #delete {
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+    }
+  }
+
+  i {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .width {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn-1 {
+    background-color: rgba(136, 14, 79, 1);
+  }
+
+  .btn-2 {
+    background-color: rgba(141, 110, 99, 1);
+  }
+
+  .btn-3 {
+    background-color: rgba(158, 158, 158, 1);
+  }
+
+  .btn-4 {
+    background-color: rgba(255, 235, 238, 1);
+  }
+
+  .btn-5 {
+    background-color: rgba(130, 119, 23, 1);
+  }
+
+  .btn-6 {
+    background-color: rgba(0, 137, 123, 1);
+  }
+
+  .widths {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn-6 {
+    background-color: rgba(0, 137, 123, 1);
+  }
+
+  .btn-7 {
+    background-color: $bodyColor;
+  }
+}
+
+.flex {
+  align-self: flex-end;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      color: #000;
+      font-family: $fontFa;
+      list-style: none;
+
+      li {
+        display: inline;
+        font-family: $fontFa;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}
